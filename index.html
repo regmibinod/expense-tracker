@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Expense Tracker</h2>
+        <div id="total-balance">
+            <h3>YOUR BALANCE</h3>
+            <h3 id="total"></h3>
+        </div>
+        <div id="income-expensive-div">
+            <div>
+                <h4>INCOME</h4>
+                <h4 id="income"></h4>
+                <span>|</span>
+                <h4>EXPENSE</h4>
+                <h4 id="expense"></h4>
+            </div>
+        </div>
+        <div>
+            <h4>History</h4>
+           <ul id="transaction-list">
+            <!-- <li class="minus"> 
+       Camera <span>- ${Math.abs(-10
+  )}</span>  <button class="delete" onclick="deleteTransaction(${1
+  })">Delete</button>
+            </li>
+            <li class="plus"> 
+                Cash 
+            </li> -->
+           </ul>
+     
+        </div>
+        <div>
+            <h4>Add new transaction</h4>
+            <form >
+                <label for="text">Transaction name</label>
+                <input type="text" placeholder="Enter text..." id="text">
+                <label for="amount">Amount(negative - epense, positive + income)</label>
+                <input type="number" placeholder="Enter amount" id="amount">
+                <button type="submit" >Add transaction</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
